@@ -33,13 +33,21 @@ These files download once selected. The drunkplan.txt file opens in the same tab
 
 ![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads") 
 
-**Step 3 -** Once downloaded, open Spyder and within it the Agent Framework file and Model file.
+**Step 3 -** Once downloaded, change the application python files automatically opens as to Spyder rather than Python (command line). Right click either file, highlight 'Open with' and select 'Choose another app'. If ‘Spyder’ is not under ‘Other options’, select ‘More Apps’ and ‘Look for another App on this PC’. Locate the original Spyder application file. Changing this setting enables python files to open with Spyder, saving time in the future.
 
-**Step 4 -** Have the 'agentframework.py' file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
+**Step 4 -** Open 'cmd' from the Start Menu. Opening Model and Agent Framework through the Command Prompt allows experienced users to work faster and requires fewer system resources (e.g. hard disk space, RAM) once set up (than if the equivalent GUI was used) (Janssens, 2015). To do this obtain the path where the files are stored. Path in ‘Downloads’ is copied from the address bar, \model.py or \agentframework.py will need adding to the path end. 
+
+![DownloadsPathScreenshot](DownloadsPathScreenshot.jpg "DownloadsPath") 
+
+**Step 5 -** Within the Command Prompt, a similar path to below should be inputted. Same paths can be used every time the files needs to be opened. Once model.py path inputted, enter pressed and Spyder opened, open Command Prompt press the up arrow and the previous line shows. Delete ‘model.py’ and input ‘agentframework.py’. Both model.py and agentframework.py will be open in Spyder. 
+
+![cmdScreenshot](cmdScreenshot.jpg "CommandPrompt") 
+
+**Step 6 -** Have the 'agentframework.py' file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
 
 ![AgentFrameworkScreenshot](AgentFrameworkScreenshot.jpg "Agent Framework")
   
-**Step 5 -** Now select the 'model.py' file within Spyder and click ‘Run’ once more. When the Model pops out it contains a Graphical User Interface with 3 clearly marked Steps A to C. ...... A text box with number of Drunks Home is also present.  
+**Step 7 -** Now select the 'model.py' file within Spyder and click ‘Run’ once more. When the Model pops out it contains a Graphical User Interface with 3 clearly marked Steps A to C. ...... A text box with number of Drunks Home is also present.  
 
 If any problems occur with the Graphical User Interface, a dropdown 'Menu' above the buttons allows the Model to 'Run' and 'Close'. 
  
@@ -59,6 +67,9 @@ If any problems occur with the Graphical User Interface, a dropdown 'Menu' above
 
 ## Future Developments Roadmap 2020
 ![DevelopmentsRoadmap](DevelopmentsRoadmap.jpg "DevelopmentsRoadmap")
+
+## Reference List
+Janssens, J., 2015. *Data Science at the Command Line: Facing the Future with Time-Tested Tools*. 2nd ed. Cambridge: O'Reilly.
 
 ## Final Points
 I do not condone any form of animal cruelty. This model was an independent project representing skills developed following the [Programming for Geographical Information Analysts: Core Skills module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python/) as part of an MSc GIS from the University of Leeds. 
