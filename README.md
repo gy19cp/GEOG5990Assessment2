@@ -8,7 +8,7 @@ Website: [gy19cp.github.io](https://gy19cp.github.io/index.html)
 
 A concise Model Summary can be found by selecting ['Model 2'](https://gy19cp.github.io/model2summary.html) in the sidebar on the website.
 
-This animated agent-based model uses 25 Drunks within a 300 by 300 raster grid environment. Drunks randomly move from the Pub to their respective Homes. Their movements are tracked and a density map is produced once all 25 people reach their respective home. 
+This animated agent-based model uses 25 Drunks within a 300 by 300 raster grid environment. Drunks randomly move from the Pub to their respective Homes. Their movements are tracked and a density map is produced once all 25 people reach their home. 
 
 ### Model Files/Directories List
 -	[Model*](https://gy19cp.github.io/model2.py) - Model to download and run. It contains detailed explanatory comments, testing and debugging. 
