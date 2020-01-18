@@ -64,7 +64,8 @@ If any problems occur with the Graphical User Interface, a dropdown 'Menu' above
 ## Licence 
 [GNU General Public License v3.0](https://github.com/gy19cp/GEOG5990Assessment2/blob/master/LICENSE) 
  agreement for the Repository code.
- 
+
+## Further Detail 
 **Potential Known Issues**, **Testing** and **Potential Development Roadmap** are detailed in the [Intention, Issues, Design and Development Process]() document uploaded at the top.
 
 ## Reference List
