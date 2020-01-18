@@ -72,5 +72,5 @@ If any problems occur with the Graphical User Interface, a dropdown 'Menu' above
 Janssens, J., 2015. *Data Science at the Command Line: Facing the Future with Time-Tested Tools*. 2nd ed. Cambridge: O'Reilly.
 
 ## Final Points
-I do not condone any form of animal cruelty. This model was an independent project representing skills developed following the [Programming for Geographical Information Analysts: Core Skills module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python/) as part of an MSc GIS from the University of Leeds. 
+I do not condone any form of drunk or disordely behaviour. This model was an independent project representing skills developed following the [Programming for Geographical Information Analysts: Core Skills module](https://www.geog.leeds.ac.uk/courses/computing/study/core-python/) as part of an MSc GIS from the University of Leeds. 
 
