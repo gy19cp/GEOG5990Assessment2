@@ -66,7 +66,7 @@ for i in range(height):
     for j in range(width):
         rowlist.append(0)
     densitymap.append(rowlist)
-print(height,width) # Checks that the Density Map has been made.
+#print(height,width) # Checks that the Density Map has been made.
 
 # Pub Location within the Environment.   
 for y, row in enumerate (environment):
@@ -94,7 +94,8 @@ def setup_agents():
                 y - Randomly generated coordinate.
                 
     Returns:    Prints number of Drunks and Police that are going to be in the model.
-                Specific Agent (Drunks) number and Boolean values, 'True' or 'False' is printed in the iPython console to show if an agent is home or not. 
+                Specific Agent (Drunks) number and Boolean values, 'True' or 'False' is printed in the iPython console to show if an 
+                agent is home or not. 
 
     """
     global num_of_police 
@@ -145,17 +146,17 @@ carry_on = True	# A Boolean value; the animation carries on running unless told 
 def update(frame_number):
     """
     Function:   Plots the environment and enables the actions for the animation. The actions are derived from the agentframework2.py. 
-                Agents (Drunks) can check an area for Police presence, move, stop moving and track movement creating a Density Map. Police 
-                can check an area for presence of Drunks, move and move (heard) Drunks to suitable areas. The number of Drunks that get home
-                is displayed in the model text box that runs in real time above the model. 
+                Agents (Drunks) can check an area for Police presence, move, stop moving and track movement creating a Density Map. 
+                Police can check an area for presence of Drunks, move and move (heard) Drunks to suitable areas. The number of Drunks
+                that get home is displayed in the model text box that runs in real time above the model. 
                 Agents (Drunks) can move.
     
     Parameters: frame_number - Number of Iterations.
-                carry_on - Global variable associated with Boolean values. If the Police and Drunks specifications above work, the model carries on.
+                carry_on - Global variable associated with Boolean values. If Police and Drunks specifications work, model continues.
                 environment - 300 x 300 raster grid containing the town plan.
                 num_of_agents - List of Drunks. 
                 num_of_police - List of Police.
-                at_home - Global variable ensures number of Drunks reaching home is able to be viewed and updated as the model progresses. 
+                at_home - Global variable ensures number of Drunks reaching home is viewed and updated as the model progresses. 
                 
     Returns:    N/A
 
@@ -193,7 +194,7 @@ def gen_function(b = [0]):
                 Once one of these conditions has been met the model stops. 
     
     Parameters: num_of_iterations - Total iterations defined at the start of the model2.py code.
-                carry_on - Produces Boolean values. If the Police and Drunks specifications above work or number of iterations are not met, the model carries on.
+                carry_on - If Police and Drunks specifications work or number of iterations are not met, model continues.
 
     Returns:    Prints iteration number. 
 
@@ -260,7 +261,8 @@ model_menu.add_command(label="Run Model", command=run)
 model_menu.add_command(label="Close Model", command=close) 
 
 # Adds Sliders to GUI.
-policeslider = tkinter.Scale(root, bd=5, from_=1, label= "Step A: Choose the Number of Police.", length= 200, orient= 'horizontal', resolution= 1, to= 5)
+policeslider = tkinter.Scale(root, bd=5, from_=1, label= "Step A: Choose the Number of Police.", length= 200, orient= 'horizontal',
+                             resolution= 1, to= 5)
 policeslider.pack(fill= 'x') # Optimum Police is 5 to see full effect of animation.
 
 # Adds Buttons to GUI.
@@ -275,6 +277,3 @@ button4.pack(fill='x')
 
 # Sets GUI waiting for events.
 tkinter.mainloop()
-
-
-
