@@ -24,7 +24,7 @@ class Agent():
         """
         Function:   Initiate class Agent (Drunks) and generate the house numbers.
                     Define xy values, the environment and a way to determine if an agent has reached home or not. 
-                    Pubs and Houses are at specific, pre-defined locations, as defined in the drunkenviro.txt file. 
+                    The Pub and Houses are at specific, pre-defined locations, as defined in the drunkenviro.txt file. 
                     Agents begin at the pub in the centre of the environment and return to each individual agents home. 
                     The route agents take to get home is random. Agents can be guided by Police home.
                     
@@ -88,24 +88,25 @@ class Agent():
     
     def density(self): 
         """
-        Function:   Each iteration of the Agent (Drunks) movement is tracked and a density map of agents movements is available to view as text after the model has been run. 
-                    The environment starts off at 0 and as agents move '1' is added to the environment. On version 3 of this model where all work is printed in the iPython 
-                    console, greater movement is shown on the density map by the environment pixels changing from blue to yellow to orange/red. On version 1, the animated 
+        Function:   Each iteration of the Agent (Drunks) movement is tracked and a density map of agents movements is available to view 
+                    as text after the model has been run. The environment starts off at 0 and as agents move '1' is added to the 
+                    environment. On version 3 of this model where all work is printed in the iPython console, greater movement is shown 
+                    on the density map by the environment pixels changing from blue to yellow to orange/red. On version 1, the animated 
                     agents produce a purple-white trail which shows agent movements. This can be seen in real time. 
             
         Parameters: environment - Raster grid from model2.py
 
         Returns:    N/A
         """
-        if self.environment[self.y][self.x] >= 0: # If the environment has more than or equal to 0 units available, a value of 1 is added to be displayed in the Density Map.
+        if self.environment[self.y][self.x] >= 0: # If the environment has >=0 units available, 1 is added to the Density Map.
             self.environment[self.y][self.x] += 1 
                
     def move(self):
         """
         Function:   Move randomly from the Pub to their respective homes or Drunks move away from the Police.
-                    If the random number generated is greater than 0.5, both xy coordinates increase by 1 and the Drunk moves either North or East. 
-                    If the number generated is less than 0.5, both xy coordinates decrease by 1 and the Drunk moves either South or West.
-                    If the Drunks can see the Police they move away from them. 
+                    If the random number generated is greater than 0.5, both xy coordinates increase by 1 and the Drunk moves either 
+                    North or East. If the number generated is less than 0.5, both xy coordinates decrease by 1 and the Drunk moves 
+                    either South or West. If the Drunks can see the Police they move away from them. 
         
         Parameters: x - Randomly generated coordinate.
                     y - Randomly generated coordinate.
@@ -115,7 +116,7 @@ class Agent():
         close = self.check_police() 
         
         if close[0] <20: # If Police are within 20, they can be seen by the Drunks. 
-            if self.x == close[1]: # If x values are the same, then pass as Drunks are already in a good location to be guided if neccessary.
+            if self.x == close[1]: # If x values are the same, then pass as Drunks are already in a good location to be guided.
                 pass
             if self.x - close[1] < 0: # Police x value is greater than Drunks.
                 self.x = self.x - 2 # Therefore, Drunks x value moves closer to 0, moving away from the Police.
@@ -200,9 +201,10 @@ class Police(Agent):
     def move(self):
         """
         Function:   Move randomly within the environment or Police move towards the Drunks.
-                    If the random number generated is greater than 0.5, both xy coordinates increase by 1 and the Police move either North or East. 
-                    If the number generated is less than 0.5, both xy coordinates decrease by 1 and the Police move either South or West.
-                    If the Police can see the Drunks they move towards them and try guide them to their respective homes. 
+                    If the random number generated is greater than 0.5, both xy coordinates increase by 1 and the Police move either 
+                    North or East. If the number generated is less than 0.5, both xy coordinates decrease by 1 and the Police move 
+                    either South or West. If the Police can see the Drunks they move towards them and try guide them to their 
+                    respective homes. 
                     
         Parameters: x - Randomly generated coordinate.
                     y - Randomly generated coordinate.
