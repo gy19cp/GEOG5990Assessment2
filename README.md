@@ -64,7 +64,7 @@ Spyder within Anaconda 3, Python 3.7.3, Command Prompt.
 
 If any problems occur with the Graphical User Interface, a dropdown 'Menu' above the buttons allows the Model to 'Run' and 'Close'. 
  
-![RunModelScreenshot](RunModelScreenshot.jpg "Run Model")
+![RunModel2Screenshot](RunModel2Screenshot.jpg "Run Model2")
  
 ## Model Expectations 
 The red dots represent the 'Drunks' and the black dots represent 'Police'. When the Model is opened, the pub is located. This is printed in the iPython console. Then within the Model GUI the user selects the number of Police required using the slider. Drunks are kept at 25, as there are 25 homes. When the Step B button is clicked, the number of Drunks and Police chosen as well as whether each agent is currently at home ('True') or not ('False') is printed in the iPython Console. Drunks start off at the Pub, so 'False' will be printed initially. Next, the model is run, Drunks start at the Pub in the centre and attempt to get to their specific home. Police try to guide them. 
