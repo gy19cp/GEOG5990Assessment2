@@ -27,6 +27,7 @@ If all versions were merged it would produce the ideal working model.
 - .jpg files - Screenshots to aid Instructions below.
 - git.attributes - Settings specified for a path.
  
+ 
 
 The __*__ indicates that it is essential to download these files in order to run the model. 
 These files download once selected. The drunkenviro.txt file opens in the same tab so it is advisable to open in a new tab or save the drunkenviro.txt file, before selecting the back command to return to this page.
