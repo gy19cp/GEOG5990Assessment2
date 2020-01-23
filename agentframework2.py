@@ -235,3 +235,5 @@ class Police(Agent):
             self.y = 299
         if self.x > 299:
             self.x = 299
+
+            
