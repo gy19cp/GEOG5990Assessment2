@@ -39,33 +39,33 @@ Spyder within Anaconda 3, Python 3.7.3, Command Prompt.
 
 **Step 1 -** Open Spyder (Anaconda 3). If you have not got this downloaded, it can be installed through the Anaconda Distribution [here](https://www.anaconda.com/distribution/). All code works with Python 3.7.3. Ensure when going through the installation process that you download ‘Spyder’. 
 
-![Spyder Screenshot](SpyderScreenshot.jpg "Initiating Spyder")
+![Spyder Screenshot](/images/SpyderScreenshot.jpg "Initiating Spyder")
 
 **Step 2 -** Download the necessary files by clicking on the following hyperlinks - [Model2](http://gy19cp.github.io/model2.py), [Agent Framework2](http://gy19cp.github.io/agentframework2.py) and [drunkenviro.txt](https://gy19cp.github.io/drunkenviro.txt). All these files should be downloaded to the computer ‘Downloads’ folder. 
 
 **Alternative Step 2 -** Complete Step 2 above or this step, not both. Alternatively you can select this [Repository](https://github.com/gy19cp/GEOG5990Assessment2) hyperlink, which will take you directly to the Assessment 2 Repository within the GitHub website. Once in the Repository, select the green ‘Clone or download’ button (on the right hand side) and ‘Download Zip’. Files downloaded to the ‘Downloads’ folder this way will need to be ‘extracted’ before appearing as individual files as shown below. To extract files, right click on the zipped folder and select 'extract all', making sure to choose a suitable location for the files. Both Step 2 methods are equally effective.  
 
-![DownloadsScreenshot](DownloadsScreenshot.jpg "Downloads") 
+![DownloadsScreenshot](/images/DownloadsScreenshot.jpg "Downloads") 
 
 **Step 3 -** Once downloaded, change the application python files automatically opens as to Spyder, rather than Python (command line). Right click either file, highlight 'Open with' and select 'Choose another app'. If ‘Spyder’ is not under ‘Other options’, select ‘More Apps’ and ‘Look for another App on this PC’. Locate the original Spyder application file. Changing this setting enables python files to open with Spyder, saving time in the future.
 
 **Step 4 -** Open 'cmd' from the Start Menu. Opening Model and Agent Framework through the Command Prompt allows experienced users to work faster and requires fewer system resources (e.g. hard disk space, RAM) once set up (than if the equivalent GUI was used) (Janssens, 2015). To do this, obtain the path where the files are stored. Path in ‘Downloads’ is copied from the address bar, \model2.py or \agentframework2.py needs to be added to the path end. 
 
-![DownloadsPathScreenshot](DownloadsPathScreenshot.jpg "DownloadsPath") 
+![DownloadsPathScreenshot](/images/DownloadsPathScreenshot.jpg "DownloadsPath") 
 
 **Step 5 -** Within the Command Prompt, similar paths as shown below should be inputted. Same paths can be used every time the files needs to be opened. Once model2.py path is inputted, enter pressed and Spyder opened. In the Command Prompt press the up arrow and the previous line shows. Delete ‘model2.py’ and input ‘agentframework2.py’. Both model2.py and agentframework2.py will be open in Spyder. 
 
-![cmdScreenshot](cmdScreenshot.jpg "CommandPrompt") 
+![cmdScreenshot](/images/cmdScreenshot.jpg "CommandPrompt") 
 
 **Step 6 -** Have the 'agentframework2.py' file selected within Spyder and click the green right-pointed arrow to ‘Run’ it.
 
-![AgentFrameworkScreenshot](AgentFrameworkScreenshot.jpg "Agent Framework")
+![AgentFrameworkScreenshot](/images/AgentFrameworkScreenshot.jpg "Agent Framework")
   
 **Step 7 -** Now select the 'model2.py' file within Spyder and click ‘Run’ once more. When the Model pops out it contains a Graphical User Interface with 5 clearly marked Steps A to E. A text box with number of Drunks Home is also present.  
 
 If any problems occur with the Graphical User Interface, a dropdown 'Menu' above the buttons allows the Model to 'Run' and 'Close'. 
  
-![RunModel2Screenshot](RunModel2Screenshot.jpg "Run Model2")
+![RunModel2Screenshot](/images/RunModel2Screenshot.jpg "Run Model2")
  
 ## Model Expectations 
 The red dots represent the 'Drunks' and the black dots represent 'Police'. When the Model is opened, the pub is located. This is printed in the iPython console. Then within the Model GUI the user selects the number of Police required using the slider. Drunks are kept at 25, as there are 25 homes. When the Step B button is clicked, the number of Drunks and Police chosen as well as whether each agent is currently at home ('True') or not ('False') is printed in the iPython Console. Drunks start off at the Pub, so 'False' will be printed initially. Next, the model is run, Drunks start at the Pub in the centre and attempt to get to their specific home. Police try to guide them. 
